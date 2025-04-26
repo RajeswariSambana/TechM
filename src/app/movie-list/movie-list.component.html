@@ -1,0 +1,19 @@
+<h2>Movies List</h2>
+<!-- buttons -->
+<div>
+  <button style="float: left;" (click)="goToSearch()">Search Movies</button>
+  <button style="float: right;" (click)="goToHome()">Back to Home</button>
+</div>
+<br>
+<br>
+<br>
+<br>
+<!-- movie box -->
+  <div class="movie-container">
+    <div class="movie-card" *ngFor="let movie of movies">
+      <img [src]="movie.image" alt="{{ movie.name }}">
+      <h3>{{ movie.name }}</h3>
+      <button (click)="viewDetails(movie.id)">View Details</button>
+    </div>
+  </div>
+

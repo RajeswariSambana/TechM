@@ -1,0 +1,19 @@
+<!-- buttons -->
+<div>
+  <button style="float: left;" (click)="goToMovies()">view Movies</button>
+  <button style="float: right;" (click)="goToHome()">Back to Home</button>
+</div>
+
+<!-- movie-details -->
+
+<h2>{{ movie?.name }} Movie details</h2>
+
+<div style="text-align : center;">
+  <img [src]="movie.image" alt="{{ movie.name }}" style="width: 200px; height: auto; border-radius: 5px;">
+  <p><strong>Name:</strong> {{ movie?.name }}</p>
+<p><strong>Director:</strong> {{ movie?.director }}</p>
+<p><strong>Release Year:</strong> {{ movie?.year }}</p>
+<p><strong>Hero:</strong> {{ movie?.hero }}</p>
+<p><strong>Heroine:</strong> {{ movie?.heroine }}</p>
+<p><strong>Plot:</strong> {{ movie?.plot }}</p>
+</div>
